@@ -1,6 +1,6 @@
 {
   "name": "@stellar-design/another-dependent",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "dist/custom-elements/index.js",
@@ -22,7 +22,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stellar-design/deep-dependent": "0.0.0",
+    "@stellar-design/deep-dependent": "^0.0.1",
     "@stellar-design/utils": "^0.0.0",
     "@stencil/core": "^2.0.0-6"
   },
