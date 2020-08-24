@@ -1,36 +1,36 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { MyComponent } from './my-component';
+import { FakeApp } from './fake-app';
 
-describe('my-component', () => {
+describe('fake-app', () => {
   it('renders', async () => {
     const { root } = await newSpecPage({
-      components: [MyComponent],
-      html: '<my-component></my-component>',
+      components: [FakeApp],
+      html: '<fake-app></fake-app>',
     });
     expect(root).toEqualHtml(`
-      <my-component>
+      <fake-app>
         <mock:shadow-root>
           <div>
             Hello, World! I'm
           </div>
         </mock:shadow-root>
-      </my-component>
+      </fake-app>
     `);
   });
 
   it('renders with values', async () => {
     const { root } = await newSpecPage({
-      components: [MyComponent],
-      html: `<my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>`,
+      components: [FakeApp],
+      html: `<fake-app first="Stencil" last="'Don't call me a framework' JS"></fake-app>`,
     });
     expect(root).toEqualHtml(`
-      <my-component first="Stencil" last="'Don't call me a framework' JS">
+      <fake-app first="Stencil" last="'Don't call me a framework' JS">
         <mock:shadow-root>
           <div>
             Hello, World! I'm Stencil 'Don't call me a framework' JS
           </div>
         </mock:shadow-root>
-      </my-component>
+      </fake-app>
     `);
   });
 });

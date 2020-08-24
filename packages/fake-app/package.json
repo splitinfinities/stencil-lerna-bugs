@@ -3,8 +3,8 @@
   "version": "0.0.2",
   "public": true,
   "description": "Stencil Component Starter",
-  "main": "dist/index.js",
-  "module": "dist/custom-elements/index.js",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
   "types": "dist/custom-elements/index.d.ts",
@@ -28,7 +28,7 @@
   "dependencies": {
     "@stellar-design/another-dependent": "^0.0.2",
     "@stellar-design/dependent-component": "^0.0.2",
-    "@stellar-design/utils": "^0.0.0",
+    "@stellar-design/fake-utils": "^0.0.2",
     "@stencil/core": "^2.0.0-6"
   },
   "license": "MIT",

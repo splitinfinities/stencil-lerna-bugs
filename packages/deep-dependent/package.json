@@ -3,8 +3,8 @@
   "version": "0.0.2",
   "public": true,
   "description": "Stencil Component Starter",
-  "main": "dist/index.js",
-  "module": "dist/custom-elements/index.js",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
   "types": "dist/custom-elements/index.d.ts",
@@ -26,8 +26,16 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^2.0.0-6"
+    "@stencil/core": "^2.0.0-6",
+    "@stellar-design/fake-utils": "0.0.2"
   },
   "license": "MIT",
-  "gitHead": "403547c2cf806c44407a4f87c7597d09a15928d5"
+  "gitHead": "403547c2cf806c44407a4f87c7597d09a15928d5",
+  "devDependencies": {
+    "@types/jest": "26.0.10",
+    "@types/puppeteer": "3.0.1",
+    "jest": "26.4.1",
+    "jest-cli": "26.4.1",
+    "puppeteer": "5.2.1"
+  }
 }

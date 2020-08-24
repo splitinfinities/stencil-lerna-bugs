@@ -3,6 +3,10 @@ import { Config } from '@stencil/core';
 export const config: Config = {
   namespace: 'dependent-component',
   taskQueue: 'async',
+  devServer: {
+    openBrowser: false,
+    port: 3334,
+  },
   outputTargets: [
     {
       type: 'dist',

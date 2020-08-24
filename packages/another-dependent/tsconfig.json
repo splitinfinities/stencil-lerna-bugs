@@ -4,6 +4,7 @@
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "declaration": false,
+    "composite": true,
     "experimentalDecorators": true,
     "lib": [
       "dom",
@@ -22,5 +23,6 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "references": [{"path": "../fake-utils"}, {"path": "../deep-dependent"}]
 }

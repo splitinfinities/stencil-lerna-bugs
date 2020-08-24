@@ -1,12 +1,12 @@
 import { Component, Prop, h } from '@stencil/core';
-import { format } from '../../utils/utils';
+import { format } from '@stellar-design/fake-utils';
 
 @Component({
-  tag: 'my-component',
-  styleUrl: 'my-component.css',
+  tag: 'dependent-component',
+  styleUrl: 'dependent-component.css',
   shadow: true,
 })
-export class MyComponent {
+export class DependentComponent {
   /**
    * The first name
    */
@@ -27,6 +27,6 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return <p>Primary Dependent Component! {this.getText()}</p>;
   }
 }

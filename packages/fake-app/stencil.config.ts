@@ -3,6 +3,10 @@ import { Config } from '@stencil/core';
 export const config: Config = {
   namespace: 'fake-app',
   taskQueue: 'async',
+  devServer: {
+    openBrowser: true,
+    port: 3333,
+  },
   outputTargets: [
     {
       type: 'dist',

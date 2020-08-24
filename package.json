@@ -6,6 +6,8 @@
   },
   "scripts": {
     "build": "lerna run build --stream",
+    "test": "lerna run test --stream",
+    "start": "lerna run start --stream --parallel --scope={@stellar-design/deep-dependent,@stellar-design/dependent-component,@stellar-design/another-dependent,@stellar-design/fake-app,@stellar-design/deep-component,}",
     "bootstrap": "lerna bootstrap",
     "cut": "yarn lerna.version && yarn lerna.publish && yarn git.push",
     "lerna.version": "lerna version --conventional-commits --yes --no-push",
