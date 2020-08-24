@@ -1,6 +1,7 @@
 {
   "name": "@stellar-design/dependent-component",
   "version": "0.0.1",
+  "public": true,
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "dist/custom-elements/index.js",
@@ -14,6 +15,9 @@
     "dist/",
     "loader/"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
@@ -25,5 +29,6 @@
     "@stellar-design/utils": "^0.0.0",
     "@stencil/core": "^2.0.0-6"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "403547c2cf806c44407a4f87c7597d09a15928d5"
 }

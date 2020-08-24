@@ -1,6 +1,7 @@
 {
   "name": "@stellar-design/fake-utils",
   "version": "0.0.1",
+  "public": true,
   "description": "",
   "main": "dist/main/index.js",
   "typings": "dist/main/index.d.ts",
@@ -8,6 +9,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "403547c2cf806c44407a4f87c7597d09a15928d5"
 }
