@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "utils" },
+    { "path": "fake-app" },
+    { "path": "deep-dependent" },
+    { "path": "another-dependent" },
+    { "path": "dependent-component" },
+  ]
+}
