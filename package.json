@@ -9,12 +9,14 @@
     "test": "lerna run test --stream",
     "start": "lerna run start --stream --parallel --scope={@stellar-design/deep-dependent,@stellar-design/dependent-component,@stellar-design/another-dependent,@stellar-design/fake-app,@stellar-design/deep-component,}",
     "bootstrap": "lerna bootstrap",
-    "cut": "yarn lerna.version && yarn lerna.publish && yarn git.push",
+    "cut": "npm run lerna.version && npm run lerna.publish && npm run git.push",
     "lerna.version": "lerna version --conventional-commits --yes --no-push",
     "lerna.publish": "lerna publish from-package",
-    "git.push": "git push --follow-tags"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+    "git.push": "git push --follow-tags",
+    "clean": "npm run clean.npm && npm run clean.lockfiles && npm run clean.stencil-cache && npm run clean.dist",
+    "clean.npm": "find . -name \"node_modules\" -exec rm -rf '{}' +",
+    "clean.lockfiles": "find . -name \"package-lock.json\" -exec rm -rf '{}' +",
+    "clean.stencil-cache": "find . -name \".stencil\" -exec rm -rf '{}' +",
+    "clean.dist": "find . -name \"dist\" -exec rm -rf '{}' +"
+  }
 }

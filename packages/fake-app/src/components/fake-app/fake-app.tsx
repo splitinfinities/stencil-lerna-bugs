@@ -1,4 +1,6 @@
 import { Component, h } from '@stencil/core';
+import "@stellar-design/dependent-component"
+import "@stellar-design/another-dependent"
 
 @Component({
   tag: 'fake-app',
@@ -8,7 +10,7 @@ export class FakeApp {
 
   render() {
     return <p>
-      App here!
+      App here!!
       <br />
 
       <dependent-component />
