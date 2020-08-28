@@ -7,7 +7,7 @@
   "scripts": {
     "build": "lerna run build --stream",
     "test": "lerna run test --stream",
-    "start": "lerna run start --stream --parallel --scope={@stellar-design/deep-dependent,@stellar-design/dependent-component,@stellar-design/another-dependent,@stellar-design/fake-app,@stellar-design/deep-component,}",
+    "start": "lerna run start --stream --parallel --scope={@stellar-design/deep-dependent,@stellar-design/dependent-component,@stellar-design/another-dependent,@stellar-design/fake-app,@stellar-design/fake-utils}",
     "bootstrap": "lerna bootstrap",
     "cut": "npm run lerna.version && npm run lerna.publish && npm run git.push",
     "lerna.version": "lerna version --conventional-commits --yes --no-push",
